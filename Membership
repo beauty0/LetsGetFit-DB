@@ -3,23 +3,23 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[TrainerMembers](
-	[MembershipID] [int] NOT NULL,
-	[TrainerID] [int] NOT NULL,
+	[MembersID] [int] NOT NULL,
+	[PPSNumber] [int] NOT NULL,
 	[ScheduleTime] datetime NULL,
  CONSTRAINT [PK_TrainerMembers_MemID_TrainID] PRIMARY KEY CLUSTERED 
-(MembershipID, TrainerID)
-CONSTRAINT [FK_TrainerMembers_newmember] FOREIGN KEY (MembershipID)
-REFERENCES Members(MembershipID)
-CONSTRAINT [FK_TrainerMembers_newTrainer] FOREIGN KEY (TrainerID)
-REFERENCES Trainer(TrainerID)
+(MembersID,PPSNumber),
+CONSTRAINT [FK_TrainerMembers_newmember] FOREIGN KEY (MembershipID),
+REFERENCES Members(MembersID),
+CONSTRAINT [FK_TrainerMembers_newTrainer] FOREIGN KEY(PPSNumber),
+REFERENCES Trainer(PPSNumber)
 
 };
 
 CREATE TABLE Members (
-    MemberID int IDENTITY(1,1) PRIMARY KEY,
+    MembersID int IDENTITY(1,1) PRIMARY KEY,
     FirstName varchar(100) NOT NULL,
      LastName varchar(100) NOT NULL,
-     Age       int(100)   NOT NULL,
+     Age       int  NOT NULL,
      Phone     varchar(100) NOT NULL,
       Address varchar(100) NOT NULL,
        PostCode varchar(100) NOT NULL,
@@ -27,16 +27,16 @@ CREATE TABLE Members (
          StartDate date NOT NULL,
          EndDate data  NULL,
          CouponCode varchar(100),
-          OffersEmail char(10),
-          Terms      char(10),
+          GDPR char(10),
+          ActiveMember char(10),
            isdelete  char(10
 
 );
 
 
 
-CREATE TABLE Trainer (
-    TrainerID int IDENTITY(19801,1) PRIMARY KEY,
+CREATE TABLE Trainers(
+    PPSNumber int NOT NULL  PRIMARY KEY,
     FirstName varchar(100) NOT NULL,
      LastName varchar(100) NOT NULL,
      Age       int(100)   NOT NULL,
@@ -47,7 +47,8 @@ CREATE TABLE Trainer (
         Phone varchar(100),
         StartDate date NOT NULL,
         EndDate date NULL,
-        Terms      char(10),
+        GDPR      char(10),
+	ActiveMember char(10),
         isdelete char(10)
         
 };
@@ -57,10 +58,10 @@ CREATE TABLE [Program] (
   [EquipmentType] varchar(100) NOT NULL,
   [memberID] int NOT NULL,
   [TrainerID] int NOT NULL,
-  CONSTRAINT [FK_Member] FOREIGN KEY (MembershipID)
-  REFERENCES Members(MembershipID)
-  CONSTRAINT [FK_Trainer] FOREIGN KEY (TrainerID)
-REFERENCES Trainer(TrainerID)
+  CONSTRAINT [FK_Member] FOREIGN KEY (MembersID),
+  REFERENCES Members(MembersID),
+  CONSTRAINT [FK_Trainer] FOREIGN KEY (PPSNumber),
+REFERENCES Trainers(PPSNumber)
 
 );
 
@@ -71,7 +72,7 @@ CREATE TABLE Payment (
      Annually  char(10),
       Quarterly  char (10),
       isdelete char (10),
-    CONSTRAINT [FK_MemberPayment] FOREIGN KEY (MembershipID)
+    CONSTRAINT [FK_MemberPayment] FOREIGN KEY (MembershipID),
     REFERENCES Members(MembershipID)
  
  
