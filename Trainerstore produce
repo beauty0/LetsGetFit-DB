@@ -1,0 +1,27 @@
+CREATE PROCEDURE [dbo].[ADDTrainerinfo]
+	@PPSNumber int OUTPUT,
+	@FirstName varchar(100),
+	@LastName Varchar(100),
+	@Age int not null,
+	@Gender char(10) NOT NULL,
+	@Address varchar(100) NOT NULL,
+	@PostCode varchar(100)NOT NULL,
+	@Email varchar(100),
+	@Phone varchar(100) NOT NULL,
+	@StartDate datetime,
+	@EndDate datetime,
+	@GDPR char(10),
+	@ActiveMember char(10),
+	@isdelete  char(10)
+
+AS
+	SET NOCOUNT ON;
+INSERT INTO [Trainers] ([FirstName], [LastName],[Age], [Gender],
+ [Address], [PostCode], [Email],[Phone],
+ [StartDate], [EndDate],[GDPR], [ActiveMember], [isdelete])
+  VALUES 
+  (@FirstName,@LastName,@Age,@Gender, @Address,@PostCode,@Email,@Phone, @StartDate,@EndDate,
+  @GDPR,@ActiveMember,@isdelete);
+	
+	
+SET @PPSNumber = SCOPE_IDENTITY();
