@@ -1,0 +1,28 @@
+CREATE PROCEDURE [dbo].[InsertMember]
+	@MembersID int OUTPUT,
+	@FirstName varchar(100),
+	@LastName Varchar(100),
+	@Age int not null,
+	@Phone varchar(100) NOT NULL,
+	@Address varchar(100) NOT NULL,
+	@PostCode varchar(100)NOT NULL,
+	@Email varchar(100),
+	@StartDate datatime,
+	@EndDate datetime,
+	@CouponCode varchar(100),
+	@ GDPR char(10),
+	@ActiveMember char(10),
+	@isdelete  char(10)
+
+AS
+	SET NOCOUNT ON;
+INSERT INTO [Members] ([FirstName], [LastName],[Age], 
+[Phone], [Address], [PostCode], [Email],
+ [StartDate], [EndDate], [Coupon], [GDPR], [ActiveMember], [isdelete])
+  VALUES 
+  (@MembersID,@FirstName,@LastName,@Age,@Phone,@Address,@PostCode,@Email,@StartDate,@EndDate,
+  @CouponCode,@GDPR,@ActiveMember,@isdelete);
+	
+	
+SET @MembersID = SCOPE_IDENTITY();
+	
