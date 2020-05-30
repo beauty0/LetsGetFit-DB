@@ -1,0 +1,45 @@
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email, StartDate, CouponCode, GDPR, ActiveMember, isdelete )
+VALUES (Iliee, Nastase, 24, +3539650924, 3 THE CEDARS
+AVOURWE, A92 X3WX,iliee@yahoo.com, 2019-01-09, N,Y,Y N);
+
+
+INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR, ActiveMember, isdelete)
+VALUES (John, Newcombe, 36, +35390206297, 33,IKERRIN COURT, E92 J3IX, John@yahoo.com, 2019-08-24, 2020-03-30, Y,N,N,Y);
+
+
+INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode, GDPR, ActiveMember,isdelete)
+VALUES (Jimmy, Connors, 46, +35321267899, 4,KILL
+CARRIGART, F92 DE43, jimmy67@gmail.com, 2018-05-10, 2020-04-28, N, Y, N, N);
+
+
+INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR,ActiveMember,isdelete)
+VALUES (Stefan,Edberg, 19, +3537453798,5,AN RÓS
+MANOR, F91 HR40, stefan90@yahoo.com, 2019-01-09, 2019-12-28, N,N,N,Y);
+
+
+INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR,ActiveMember,isdelete)
+VALUES (Andre Agassi, 39, +35374401095, 56,LIFFEY PARK 
+MAYFIELD, T23 F6W4,Andre@yahoo.com, 2019-04-09, ,2020-01-30, Y,Y,N,N);
+
+
+
+INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR, ActiveMember,isdelete)
+VALUES (Chris Evert, 45, +3534186858, APARTMENT 5
+YEATS HALL, D18 P892,chris67@yahoo.com, 2018-01-09, ,2019-10-11, N,Y,N,N);
+                  
+
+INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR,ActiveMember,isdelete)
+VALUES (Kim Clijsters, 33, +35317522245, 78,THE WOODS
+GLOUNT, A92 X3WX,Kim@gmail.com, 2018-01-09, 2020-02-24, N,N,N,Y);
+
+
+INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GPPR,ActiveMember,isdelete)
+VALUES (Lindsay Davenport, 19, +353647501711, 56,WESTMINSTER ROAD, D18 Y3E3, Linda157@gmail.com, 2019-03-09, N,Y,Y,N);
+
+
+INSERT INTO Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR,ActiveMember, isdelete)
+VALUES (Jelena Janković, 26, +3539650924, 12, ROSEBANK COURT, F93 H672, jele89@yahoo.com, 2019-05-09, N,Y,Y,N);
+
+
+INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode, GDPR, ActivateMember, isdelete)
+VALUES (Dinara Safina, 29, +35394045174, 67 ERRIGAL ROAD, D12 FW66, Dinara10@yahoo.com, 2019-03-09, N,Y,Y,N);
