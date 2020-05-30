@@ -1,0 +1,4 @@
+INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR,ActiveMember,isdelete)
+VALUES (Andre Agassi, 39, +35374401095, 56,LIFFEY PARK 
+MAYFIELD, T23 F6W4,Andre@yahoo.com, 2019-04-09, ,2020-01-30, Y,N,N,Y);
+
