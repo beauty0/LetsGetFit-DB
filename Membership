@@ -1,78 +1,147 @@
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
 CREATE TABLE [dbo].[TrainerMembers](
+
 	[MembersID] [int] NOT NULL,
+
 	[PPSNumber] [int] NOT NULL,
+
 	[ScheduleTime] datetime NULL,
+
  CONSTRAINT [PK_TrainerMembers_MemID_TrainID] PRIMARY KEY CLUSTERED 
+
 (MembersID,PPSNumber),
-CONSTRAINT [FK_TrainerMembers_newmember] FOREIGN KEY (MembershipID),
+
+CONSTRAINT [FK_TrainerMembers_newmember] FOREIGN KEY (MembersID)
+
 REFERENCES Members(MembersID),
-CONSTRAINT [FK_TrainerMembers_newTrainer] FOREIGN KEY(PPSNumber),
-REFERENCES Trainer(PPSNumber)
 
-};
+CONSTRAINT [FK_TrainerMembers_newTrainer] FOREIGN KEY(PPSNumber)
 
-CREATE TABLE Members (
+REFERENCES Trainers(PPSNumber)
+);
+
+
+
+
+
+
+CREATE TABLE Members(
+
     MembersID int IDENTITY(1,1) PRIMARY KEY,
+
     FirstName varchar(100) NOT NULL,
+
      LastName varchar(100) NOT NULL,
+
      Age       int  NOT NULL,
+
      Phone     varchar(100) NOT NULL,
+
       Address varchar(100) NOT NULL,
+
        PostCode varchar(100) NOT NULL,
+
          Email varchar(100) NOT NULL,
+
          StartDate date NOT NULL,
-         EndDate data  NULL,
+
+         EndDate date  NULL,
+
          CouponCode varchar(100),
+
           GDPR char(10),
+
           ActiveMember char(10),
-           isdelete  char(10
+
+           isdelete  char(10)
+
+
 
 );
+
+
+
+
 
 
 
 CREATE TABLE Trainers(
-    PPSNumber int NOT NULL  PRIMARY KEY,
+
+    PPSNumber int  IDENTITY(23456,10) PRIMARY KEY,
+
     FirstName varchar(100) NOT NULL,
+
      LastName varchar(100) NOT NULL,
-     Age       int(100)   NOT NULL,
+
+     Age       int   NOT NULL,
+
      Gender       char(10)   NOT NULL,
+
       Address varchar(100) NOT NULL,
+
        PostCode varchar(100) NOT NULL,
+
         EmailAddress varchar(100) NOT NULL,
+
         Phone varchar(100),
+
         StartDate date NOT NULL,
+
         EndDate date NULL,
+
         GDPR      char(10),
+
 	ActiveMember char(10),
+
         isdelete char(10)
+
         
-};
-CREATE TABLE [Program] (
-  [ProgramID] int IDENTITY(78566,1) PRIMARY KEY,
-  [ProgramType] varchar(100) NOT NULL,
-  [EquipmentType] varchar(100) NOT NULL,
-  [memberID] int NOT NULL,
-  [TrainerID] int NOT NULL,
-  CONSTRAINT [FK_Member] FOREIGN KEY (MembersID),
-  REFERENCES Members(MembersID),
-  CONSTRAINT [FK_Trainer] FOREIGN KEY (PPSNumber),
-REFERENCES Trainers(PPSNumber)
 
 );
 
+CREATE TABLE [Program] (
+
+  [ProgramID] int IDENTITY(78566,1) PRIMARY KEY,
+
+  [ProgramType] varchar(100) NOT NULL,
+
+  [EquipmentType] varchar(100) NOT NULL,
+
+  [membersID] int NOT NULL,
+
+  [PPSNumber] int NOT NULL,
+
+  
+
+  CONSTRAINT [f_Members] FOREIGN KEY(MembersID)
+
+  REFERENCES Members(MembersID),
+
+  CONSTRAINT [FK_Trainers] FOREIGN KEY (PPSNumber)
+
+REFERENCES Trainers(PPSNumber)
+
+
+
+);
+
+
+
 CREATE TABLE Payment (
+
     PaymentID int IDENTITY(1000,1) PRIMARY KEY,
-    MembershipID int  Not Null,
+
+    [MembersID] int  Not Null,
+
      Monthly char(10),
+
      Annually  char(10),
+
       Quarterly  char (10),
+
       isdelete char (10),
-    CONSTRAINT [FK_MemberPayment] FOREIGN KEY (MembershipID),
-    REFERENCES Members(MembershipID)
- 
- 
+
+    CONSTRAINT [FK_MemberPayment] FOREIGN KEY (MembersID)
+
+    REFERENCES Members(MembersID)
+
+	);
