@@ -1,0 +1,55 @@
+USE [LetsGetFit]
+GO
+/****** Object:  StoredProcedure [dbo].[ADDTrainerinfo]    Script Date: 31/05/2020 14:11:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE [dbo].[ADDTrainerinfo]
+
+	@PPSNumber int OUTPUT,
+
+	@FirstName varchar(100),
+
+	@LastName Varchar(100),
+
+	@Age int ,
+
+	@Gender char(10),
+
+	@Address varchar(100),
+
+	@PostCode varchar(100),
+
+	@EmailAddress varchar(100),
+
+	@Phone varchar(100),
+
+	@StartDate datetime,
+
+	@EndDate datetime,
+
+	@GDPR char(10),
+
+	@ActiveMember char(10),
+
+	@isdelete  char(10)
+
+
+
+AS
+
+INSERT INTO [Trainers] ([FirstName], [LastName],[Age], [Gender],
+
+ [Address], [PostCode], [EmailAddress],[Phone],
+
+ [StartDate], [EndDate],[GDPR], [ActiveMember], [isdelete])
+
+  VALUES 
+
+  (@FirstName,@LastName,@Age,@Gender, @Address,@PostCode,@EmailAddress,@Phone, @StartDate,@EndDate,
+
+  @GDPR,@ActiveMember,@isdelete);
+
+	
+SET @PPSNumber = SCOPE_IDENTITY();
