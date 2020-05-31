@@ -1,0 +1,9 @@
+update trainers
+set StartDate = '2020-02-19'
+where PPSNumber = '23546';
+
+update trainers
+set EndDate = '2021-03-28'
+where PPSNumber = '23546'
+
+alter is use for datatype
