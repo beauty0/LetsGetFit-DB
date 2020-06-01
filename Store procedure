@@ -53,3 +53,30 @@ INSERT INTO [Trainers] ([FirstName], [LastName],[Age], [Gender],
 
 	
 SET @PPSNumber = SCOPE_IDENTITY();
+
+
+
+
+
+CREATE PROCEDURE [dbo].[Program]
+
+	@ProgramID int OUTPUT,
+
+	@EquipmentType varchar(100),
+
+	@membersID INT,
+
+	@PPSNumber int
+
+
+
+AS
+
+INSERT INTO [Program] ([EquipmentType], [memberID],[PPSNumber])
+
+  VALUES 
+
+  (@EquipmentType,@membersID,@PPSNumber);
+
+	
+SET @ProgramID = SCOPE_IDENTITY();
