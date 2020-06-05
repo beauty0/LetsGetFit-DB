@@ -1,0 +1,27 @@
+CREATE PROCEDURE [dbo].[Check PaymentGDPR]
+
+	@membersID INT,
+	@FinalPayment char(10),
+	@GDPR Char(10),
+	@isdelete Char(10)
+	@PmemberID
+	AS 
+	IF ((@FinalPayment = 'Y') AND (@GDPR = 'N'))
+    return -1 
+    begin 
+    select [[Members].GDPR, [Payment].FinalPayment
+    from
+    [dbo].[Members]
+    where Members.MembersID = @membersID
+    AND Payment.MembersID = @PmemberID
+    
+    insert Members
+    values(@isdelete)
+    else 
+    update Members
+    set isdelete(@isdelete) = 'Y'
+     where Members.MembersID = @membersID
+    AND Payment.MembersID = @PmemberID
+    else
+  set isdelete(@isdelete) = 'N'
+  END
