@@ -1,4 +1,15 @@
-INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email, StartDate, CouponCode, GDPR, ActiveMember, isdelete )
+INSERT INTO Members ,[FirstName]
+      ,[LastName]
+      ,[Age]
+      ,[Phone]
+      ,[Address]
+      ,[PostCode]
+      ,[Email]
+      ,[StartDate]
+      ,[EndDate]
+      ,[CouponCode]
+      ,[GDPR]
+      ,[isdelete]e )
 VALUES (Iliee, Nastase, 24, +3539650924, 3 THE CEDARS
 AVOURWE, A92 X3WX,iliee@yahoo.com, 2019-01-09, N,Y,Y N);
 
