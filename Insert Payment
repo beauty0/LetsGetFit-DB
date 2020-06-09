@@ -17,7 +17,7 @@ INSERT INTO  Payment  (MembersID,Monthly,Annually, Quarterly, FinalPayment)
 VALUES (6, 0, 0, 1, Y);
 
 INSERT INTO Payment  (MembersID,Monthly,Annually, Quarterly, FinalPayment)
-VALUES (7, 1, 0, 1, Y);
+VALUES (7, 1, 0, 0, Y);
 
 INSERT INTO  Payment  (MembersID,Monthly,Annually, Quarterly, FinalPayment)
 VALUES (8, 1, 0, 0, N);
