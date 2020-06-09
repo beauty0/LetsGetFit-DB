@@ -1,56 +1,61 @@
-INSERT INTO Members ,[FirstName]
-      ,[LastName]
-      ,[Age]
-      ,[Phone]
-      ,[Address]
-      ,[PostCode]
-      ,[Email]
-      ,[StartDate]
-      ,[EndDate]
-      ,[CouponCode]
-      ,[GDPR]
-      ,[isdelete]e )
-VALUES (Iliee, Nastase, 24, +3539650924, 3 THE CEDARS
-AVOURWE, A92 X3WX,iliee@yahoo.com, 2019-01-09, N,Y,Y N);
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('Iliee', 'Nastase', 24, '+3539650924', '3 THE CEDARS AVOURWE,DUNDRUM DUBLIN 10
+AVOURWE', 'A92 X3WX','iliee@yahoo.com', '2019-01-09','2020-01-09', '1560JUNE', 'Y','null');
 
 
-INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR, ActiveMember, isdelete)
-VALUES (John, Newcombe, 36, +35390206297, 33,IKERRIN COURT, E92 J3IX, John@yahoo.com, 2019-08-24, 2020-03-30, Y,N,N,Y);
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('John', 'Newcombe', 36, '+3538468888722', '33 IKERRIN COURT TALLAGT, DUBLIN 24',
+ 'E92 J3IX','john@yahoo.com', '2019-02-10','2020-10-10', '189MAY', 'Y','null');
 
 
-INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode, GDPR, ActiveMember,isdelete)
-VALUES (Jimmy, Connors, 46, +35321267899, 4,KILL
-CARRIGART, F92 DE43, jimmy67@gmail.com, 2018-05-10, 2020-04-28, N, Y, N, N);
-
-
-INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR,ActiveMember,isdelete)
-VALUES (Stefan,Edberg, 19, +3537453798,5,AN RÓS
-MANOR, F91 HR40, stefan90@yahoo.com, 2019-01-09, 2019-12-28, N,N,N,Y);
-
-
-INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR,ActiveMember,isdelete)
-VALUES (Andre Agassi, 39, +35374401095, 56,LIFFEY PARK 
-MAYFIELD, T23 F6W4,Andre@yahoo.com, 2019-04-09, ,2020-01-30, Y,Y,N,N);
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('Jimmy', 'Connors', 46, '+353822899702', '4 KILL CARRIGART, DUBLIN CITY DUBLIN 1', 'F92DE43','jimmy67@yahoo.com',
+'2019-12-12','2020-03-11', '3567APRIL', 'Y','null');
 
 
 
-INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR, ActiveMember,isdelete)
-VALUES (Chris Evert, 45, +3534186858, APARTMENT 5
-YEATS HALL, D18 P892,chris67@yahoo.com, 2018-01-09, ,2019-10-11, N,Y,N,N);
-                  
-
-INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR,ActiveMember,isdelete)
-VALUES (Kim Clijsters, 33, +35317522245, 78,THE WOODS
-GLOUNT, A92 X3WX,Kim@gmail.com, 2018-01-09, 2020-02-24, N,N,N,Y);
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('Stefan', 'Edberg', 18, '+35374537980', '5,AN ROS MANOR BLANCHARDSTOWN DUBLIN15',
+'F91 HR40 ','stefan90@yahoo.com', '2019-04-09','2020-04-14', '23167DEC', 'Y','null');
 
 
-INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GPPR,ActiveMember,isdelete)
-VALUES (Lindsay Davenport, 19, +353647501711, 56,WESTMINSTER ROAD, D18 Y3E3, Linda157@gmail.com, 2019-03-09, N,Y,Y,N);
+
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('Andre', 'Agassi', 24, '+353844010951', '56, LIFFEY PARK MAYFIELD KYLEMORE DUBLIN 12',
+'T23 HR40','Andre@yahoo.com', '2019-10-01','2020-10-01', '674SEP', 'Y','null');
+
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('Sopoline', 'Weber', 35, '+353852898413', '5  LAKE HOUSE, DUBLIN 10',
+ 'H26 01WX','iliee@yahoo.com', '2019-11-12','2020-11-12', '187OCT', 'Y','null');
 
 
-INSERT INTO Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode,GDPR,ActiveMember, isdelete)
-VALUES (Jelena Janković, 26, +3539650924, 12, ROSEBANK COURT, F93 H672, jele89@yahoo.com, 2019-05-09, N,Y,Y,N);
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('Mary', 'Smith', 21, '+35393457619', '90 SKLINM RD DUBLIN 2'
+, 'B22 J3HO','MarySmith@yahoo.com', '2019-08-13','2020-08-13', '1458JULY', 'Y','null');
 
 
-INSERT INTO  Members  (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode, GDPR, ActivateMember, isdelete)
-VALUES (Dinara Safina, 29, +35394045174, 67 ERRIGAL ROAD, D12 FW66, Dinara10@yahoo.com, 2019-03-09, N,Y,Y,N);
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('Lindsay', 'Davenport', 19, '+353647501711', '56 WESTMINISTER ROAD, FINGLAS DUBLIN 11',
+'D18 Y3E3','Linda157@gmail.com', '2019-09-11','2020-09-11', 'N', 'Y','null');
+
+
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('Jelena', 'Jankovic', 26, '+353965092489', '12,ROSEBAK COURT, CLONDALKIN DUBLIN 22', 'F93 H672','jele89@yahoo.com', 
+'2019-12-28','2020-12-28', 'N', 'Y','null');
+
+
+
+
+INSERT INTO Members (FirstName,LastName,Age,Phone,Address,PostCode,Email,StartDate,EndDate,CouponCode ,GDPR,isdelete]e 
+VALUES ('Dinara', 'Safina', 29, '+353940451741', '67 ERRIGAL ROAD, PARKWEST DUBLIN 12','D12 FW66','Dinara10@yahoo.com',
+'2019-12-28','2020-12-28', 'N', 'Y','null');
+
+
+
+
+
+
+
+
+
+
