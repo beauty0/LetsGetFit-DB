@@ -1,32 +1,34 @@
 INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES (Circuit training, Medicine Ball,  1, 23456);
+VALUES ('Chest press', 'A1XX Flat',  10, 23546);
 
 INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES (DEAD LIFT, PUMP,  2, 23466);
+VALUES ('pulldownG', 'Lat pulldown',  9, 23536);
 
 INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES (Kettlebell Swings, KETTLEBELLS,  3, 23476);
+VALUES ('Elliptical Workout', 'Elliptical trainers', 8, 23526);
 
 INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES ( TRX, TRX Inverted Rows,  4, 23486);
+VALUES ('Kettlebell', 'Swings',  3, 23476);
 
 INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES ( BOXERCISE,BOXING BAG,  5, 23496);
+VALUES ( 'TRX', 'TRX Inverted Rows',  4, 23486);
 
 INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES (BOXING BAG, SPIN Motorized Electric Mini, 6, 23506);
+VALUES ( 'BOXERCISE','BOXING BAG',  5, 23496);
 
 INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES (Side Shuffles, Treadmill, 7, 23516);
+VALUES ('DEAD LIFT','PUMP', 2, 23466);
 
 INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES (Elliptical Workout, Elliptical trainers, 8, 23526);
+VALUES ('Side Shuffles', 'Treadmill', 7, 23516);
 
-INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES (pulldownG, Lat pulldown, 9, 23536);
 
 
 INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
-VALUES (Chest press, A1XX Flat, 10, 23546);
+VALUES ('Circult training', Medicine Ball', 1, 23456);
+
+
+INSERT INTO Program (ProgramType, EquipmentType, MembersID, PPSNumber)
+VALUES ('Boxing Bag', 'SPIN  Motorized', 6, 23486);
 
 
