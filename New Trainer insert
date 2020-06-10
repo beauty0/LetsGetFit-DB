@@ -1,22 +1,22 @@
 INSERT INTO Trainers (ProgramID FirstName, LastName, Age, Gender,Address,
-PostCode,Email, Phone, StartDate, EndDate, GDPR, Isdelete)
+PostCode,EmailAddress, Phone, StartDate, EndDate, GDPR, Isdelete)
 VALUES ( 'Dan', 'Smith', 30, 'M', 'Whitehall rd, Dublin1', 'W31 T5W7', 'dansmi@yahoo.com', '+3539775343',
 '2018-04-23', '2020-11-08', 'Y','null' );
 
 INSERT INTO Trainers (FirstName,LastName,Age,Gender,Address,
-PostCode,Email, Phone, StartDate,EndDate, GDPR, Isdelete)
+PostCode,EmailAddress, Phone, StartDate,EndDate, GDPR, Isdelete)
 VALUES ( 'Sam', 'Obrien', 28, 'F', '9 BALLYB' Dublin 2, 'V31 ND37', 'Sam67@yahoo.com', '+35397535338', 
 2018-10-25', 2020-04-01, Y,'null')
 
 INSERT INTO Trainers (FirstName,LastName,Age,Gender,Address,
-PostCode,Email, Phone, StartDate,EndDate,GDPR, isdelete)
+PostCode,EmailAddress, Phone, StartDate,EndDate,GDPR, isdelete)
 VALUES ( 'Gina', 'Mophie', 23, 'F', '35 Rodawy Rd Dublin 3', 'F23 W4TS', 'ginamor@gmail.com', '+3538567345', 
 '2019-06-29', '2020-05-17', 'Y', 'null');
 
 
 
 INSERT INTO Trainers (FirstName,LastName,Age,Gender,Address,
-PostCode,Email, Phone, 'StartDate','EndDate', 'GDPR', Isdelete)
+PostCode,EmailAddress, Phone, 'StartDate','EndDate', 'GDPR', Isdelete)
 VALUES ('Andre, 'Thomas', 29, 'M', 37 'Grandache Rd, Dublin 4', 'C34 T6W7','Thomas@gmail.com','+35384584278',
 '2019-04-29', '2021-03-27', 'Y','null');
 
@@ -24,37 +24,37 @@ VALUES ('Andre, 'Thomas', 29, 'M', 37 'Grandache Rd, Dublin 4', 'C34 T6W7','Thom
 
 
 INSERT INTO Trainers (FirstName,LastName,Age,Gender,Address,
-PostCode,Email, Phone, StartDate,EndDate, GDPR, Isdelete)
+PostCode,EmailAddress, Phone, StartDate,EndDate, GDPR, Isdelete)
 VALUES ('Croner', 'Rafert', 34, 'M', 34, '56 Blackhall Rd,  Dublin 6', 'G56 Y7I8', Croner67@gmail.com, '+353856341256', 
 '2018-11-01, 2021-11-21, 'Y','null');
 
 
 
 INSERT INTO Trainers (FirstName,LastName,Age,Gender,Address,
-PostCode,Email, Phone, StartDate,EndDate, GDPR, Isdelete)
+PostCode,EmailAddress, Phone, StartDate,EndDate, GDPR, Isdelete)
 VALUES ('William', 'Alen', 29, 'F, '78 The Waters Lawn, Dublin 8','T34 A6HA', 'williamAI@gmail.com', '+35384512678', 
 '2019-12-24', '2021-12-24','Y', 'null');
 
 INSERT INTO Trainers (FirstName,LastName,Age,Gender,Address,
-PostCode,Email, Phone, 'StartDate',EndDate, GDPR, Isdelete)
+PostCode,EmailAddress, Phone, 'StartDate',EndDate, GDPR, Isdelete)
 VALUES ('Michelle', 'Connors', 28, 'F', '23 New Bally,Dublin 1', 'H47 S7B5', 'michelle97@gmail.com', '+3538345689', 
 '2018-01-15', '2020-04-08', 'Y','null');
 
 
 
 INSERT INTO Trainers (FirstName,LastName,Age,Gender,Address,
-PostCode,Email, Phone, 'StartDate',EndDate, GDPR, Isdele)
+PostCode,EmailAddress, Phone, 'StartDate',EndDate, GDPR, Isdele)
 VALUES ('Nail', 'Sampras', 28, 'M', 14 Grandtower, Dublin2', 'J67 U98J', 'nailsam@hotmail.com', '+35386489',
 '2019-11-19', '2021-11-15', 'Y','null');
 
 INSERT INTO Trainers (FirstName,LastName,Age,Gender,Address,
-PostCode,Email, Phone, 'StartDate',EndDate, GDPR, Isdelete)
+PostCode,EmailAddress, Phone, 'StartDate',EndDate, GDPR, Isdelete)
 VALUES ('Alan', 'Williams', 35, 'M', '23 Rockwell rd, Dublin 3', 'F65 U7T6', 'alanwill@gmail.com', '+353872345789', 
 '2020-01-03, '2021-11-20', 'Y', 'null');
 
 
 INSERT INTO Trainers (FirstName,LastName,Age,Gender,Address,
-PostCode,Email, Phone, 'StartDate',EndDate, GDPR, Isdelete)
+PostCode,EmailAddress, Phone, 'StartDate',EndDate, GDPR, Isdelete)
 VALUES ('Evan', 'Banks', 34, 'M', '32 South Circular, Dublin 8',  'E56 7KY8', 'evan@yahoo.com', '+3535672346', 
 '2018-05-01', '2021-03-28', 'Y',null);
 
