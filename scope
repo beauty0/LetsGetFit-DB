@@ -1,0 +1,39 @@
+Distinguishing table types and their uses.
+MembersID,  Program, Payment, Trainers,TrainerMembers
+
+Member table
+Members table will contain the information of members, e.g. name, address, phone, postal code, 
+Email, startdate, Enddate, GDPR, isdelete
+The Members table will have a one  to many relationship with Payment table
+The Members table will have one to many relationship with the program table.
+
+
+Payment table
+The Payment tables will contain Payment options e.g annually, monthly, Quarterly, FinalPayment
+Payment table will have many to one relationship with members table having membersID as a foreign key referencing the members table.
+
+Program table
+Program table will contains the different  type of exercise and equipment for members. 
+Program table will have many to one relationship with the members table  using foreign key  to reference the Members table.
+
+Program table will have many to one relationship with the Trainers t table  using foreign key  to reference the Trainers table
+
+Trainers Table 
+Trainers table will contain the information of Trainers, e.g. name,  age, Gender, address, phone, postal code, 
+Email, startdate, Enddate. GDPR, isdelete
+
+The table will have one to zero and many relationship with the trainers table.
+The table will have one to many relationship with the program table.
+
+
+TrainerMembers
+This table is create as a bridge table for both the Trainers and member table.
+The table will be many  to one relationship  with the members table 
+and zero to one relationship with Trainers table .
+The table will have primary key constraint to reference  the members table this primary key constraint is created to stop duplicated values in the table.
+
+The table will have primary key constraint to reference  the Trainers  table this primary key constraint is created to stop duplicated values in the table.
+
+TrainerMembers with contain both agreed date and time for the members and trainer to meet to discuss training plans.
+
+
